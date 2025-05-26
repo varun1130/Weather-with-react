@@ -17,7 +17,7 @@ const Weather = () => {
   }
   const fetchApi = async()=> {
     try{
-      let Data = await axios.get();//put your api in get
+      let Data = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${`b0dbbe8f9f7b73af5b846b4a51a34f53`}`);
       
       setwData(Data);
       console.log(Data);
